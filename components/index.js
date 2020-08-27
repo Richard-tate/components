@@ -30,10 +30,11 @@ toggle_nav3.addEventListener('click', nav_toggle3 );
 
 function nav_toggle3() {
   var x = document.querySelector(".navbar");
-  if (x.style.display === "block") {
-    x.style.display = "none";
+  var y = document.querySelector(".hidden_content");
+  if (x.style.display === "block", y.style.display === 'none' ) {
+    x.style.display = "none", y.style.display = 'block';
   } else {
-    x.style.display = "block";
+    x.style.display = "block", y.style.display ='none';
   }
 } 
 
@@ -42,6 +43,27 @@ nav3.classList.add('navbar');
 nav3.style.backgroundColor = '#303030';
 nav3.style.color = 'white';
 document.querySelector('.third').appendChild(nav3);
+
+const ul3 = document.createElement('ul');
+const list_1 = document.createElement('li');
+const list_2 = document.createElement("li");
+const list_3 = document.createElement('li');
+const list_4 = document.createElement('li');
+        list_1.innerHTML="<a href='#'>placeholder</a>";
+        list_2.innerHTML = "<a href='#'>placeholder</a>";
+        list_3.innerHTML = "<a href='#'>placeholder</a>";
+        list_4.innerHTML = "<a href='#'>placeholder</a>";
+        ul3.appendChild(list_1);
+        ul3.appendChild(list_2);
+        ul3.appendChild(list_3);
+        ul3.appendChild(list_4);
+document.querySelector('.navbar').appendChild(ul3);
+
+const content3 = document.createElement('p');
+content3.classList.add('hidden_content');
+content3.innerHTML = "This a full navbar that sets the text display to none and displays the nav bar when the button is clicked." +" "+
+" This uses the same if statement but adds an extra 'var' to it that is reversed from the other one so that the text shows when navbar is closed but not when its open.";
+document.querySelector('.third').appendChild(content3);
 
 //first box //
 
@@ -76,20 +98,6 @@ function nav_toggle() {
   }
 } 
 
-const ul3 = document.createElement('ul');
-const list_1 = document.createElement('li');
-const list_2 = document.createElement("li");
-const list_3 = document.createElement('li');
-const list_4 = document.createElement('li');
-        list_1.innerHTML="<a href='#'>placeholder</a>";
-        list_2.innerHTML = "<a href='#'>placeholder</a>";
-        list_3.innerHTML = "<a href='#'>placeholder</a>";
-        list_4.innerHTML = "<a href='#'>placeholder</a>";
-        ul3.appendChild(list_1);
-        ul3.appendChild(list_2);
-        ul3.appendChild(list_3);
-        ul3.appendChild(list_4);
-document.querySelector('.navbar').appendChild(ul3);
 
 const nav = document.createElement('nav');
 nav.classList.add('side_nav_bar');
@@ -112,6 +120,23 @@ const list4 = document.createElement('li');
         ul.appendChild(list4);
 document.querySelector('.side_nav_bar').appendChild(ul);
 
+
+const content = document.createElement('h2');
+content.classList.add('sidebar_content');
+content.innerHTML= 'This is a side nav with no animation.';
+document.querySelector('.first').appendChild(content);
+
+const text = document.createElement('p');
+text.classList.add('first_text');
+text.innerHTML = 'You create this effect by switching the display setting to "block" from "none" and vice-versa. Feel free to click the button and try it out.';
+document.querySelector('.first').appendChild(text);
+
+const text_ = document.createElement('p');
+text_.classList.add('first_text_');
+text_.innerHTML= " You need to add a event listener to the button, that passes the function on the click event attached to the button which changes the css display.  " +
+"The function should select the class of the sidenav and change it's display form it's starting display which is none and change it to block, it does this with an 'IF' statement." +
+" Like this: if (x.style.display === 'block') {x.style.display = 'none';} else {x.style.display = 'block';}} . This not the only way to get effect but is how this one was done. ";
+document.querySelector('.first').appendChild(text_);
 //second box and nav //
 
 const box_ = document.createElement('div');
@@ -168,4 +193,22 @@ const li4 = document.createElement('li');
         ul2.appendChild(li4);
 document.querySelector('.nav_bar').appendChild(ul2);
 
+const content_ = document.createElement('h2');
+content_.classList.add('top_content');
+content_.innerHTML= 'This is a top nav bar with no animation.';
+document.querySelector('.second').appendChild(content_);
 
+const text2 = document.createElement('p');
+text2.classList.add('second_text');
+text2.innerHTML = " As with the side nav you need to add an eventlistener to the button and pass it the function that changes the display to block to show nav bar and back again on click of button the main difference is on the css settings which" +" "+
+"alter's how the nav bar looks in this case the width is set 100% but the height is set to 10%. this nav bar does have a push down effect unlike the side nav. click it to see for yourself. ";
+document.querySelector('.second').appendChild(text2);
+
+const main = document.createElement('section');
+main.classList.add('section_');
+document.querySelector('body').appendChild(main);
+
+const main_h1 = document.createElement('h1');
+main_h1.classList.add('main_h1');
+main_h1.innerHTML= 'All of these examples where made from the javascriptDOM !';
+document.querySelector('.section_').appendChild(main_h1);

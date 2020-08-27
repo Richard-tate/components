@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 } 
+body{
+    overflow: hidden;
+}
 a {
     text-decoration: none;
     color: white;
@@ -117,10 +120,14 @@ li {
     position: relative;
     display: none;
     text-align: center;
+    z-index: 10;
 }
 
 .navbar li{
     padding: 1.4em .5em 1em;
+}
+.navbar li:hover{
+    background: darkslategray;
 }
 
 #demo{
@@ -180,4 +187,62 @@ li {
     background-color: rgb(145, 27, 27);
     top: 3em;
     left: 3em;  
+}
+
+.sidebar_content{
+    font-size: 1.2em;
+    text-align: center;
+    margin: 1em 0 0 0;
+    color: rgb(175, 189, 202);
+}
+
+.first_text{
+    color: rgb(175, 189, 202);
+    text-align: left;
+    max-width: 350px;
+    margin: .75em 4.5em;
+    font-size: .9em;
+}
+
+.first_text_{
+    color: rgb(175, 189, 202);
+    text-align: left;
+    max-width: 350px;
+    margin: .75em 4.5em;
+    font-size: .9em;
+}
+
+.top_content{
+    font-size: 1.2em;
+    text-align: center;
+    margin: 1em 0 0 0;
+    color: rgb(175, 189, 202);
+}
+.second_text{
+    color: rgb(198, 220, 241);
+    text-align: left;
+    max-width: 350px;
+    margin: 1.5em 4.5em;
+    font-size: .9em;
+}
+.hidden_content{
+    font-size: 1em;
+    text-align: left;
+    margin: 2em 2em;
+    color: rgb(175, 189, 202);
+    display: block;
+}
+
+.third_text{
+    color: rgb(198, 220, 241);
+    text-align: left;
+    max-width: 350px;
+    margin: 1.5em 4.5em;
+    font-size: .9em;
+}
+
+.main_h1{
+    position: relative;
+    left: 25em;
+    margin: 5em 0; 
 }
