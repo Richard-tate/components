@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+} 
+body{
+    display: inline;
+    overflow: hidden;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+li {
+    list-style-type: none;
+    font-size: 1.4em;
+}
+
+
+.hamburger {
+    display: block;
+    position: relative;
+    left: -.5em;
+    top: -.2em;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    background: white;
+    width: 1.2em;
+    height: 3px;
+    border-radius: .5em;
+}
+
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.hamburger::before { top: 6px; }
+.hamburger::after { bottom: 6px; }
+
+
+.container{
+    height: 1000px;
+}
+.navbar{
+    display: none;
+    background: #303030;
+    height: 100%;
+    width: 100%;
+    color: aliceblue;
+    text-align: center;
+    line-height: 3em;
+    font-size: 2em;
+}
+.navbar li{
+    position: relative;
+    top: 4em;
+}
