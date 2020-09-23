@@ -1,0 +1,100 @@
+*{
+padding: 0;
+margin: 0;
+}
+html, body{
+    font-size: 20px;
+    text-align: center;
+}
+.modal{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(30,30,30,0.8);
+    display: none;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 900;
+}
+.modal-card{
+    position: relative;
+    width: 400px;
+    height: 600px;
+    background: #870b0b;
+    top: 2em;
+    padding: 20px;
+    z-index: 1000;
+    margin: 0 auto;
+}
+.modal-card img{
+    position: relative;
+    width: 80%;
+    height: 80%;
+}
+.close-btn{
+    position: absolute;
+    width: 100px;
+    top: 560px;
+    left: 170px;
+    padding: 5px;
+    background: #303030;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+}
+.close-btn:hover{
+    background: black;
+    box-shadow: rgb(54, 2, 2) 5px 3px 3px;
+}
+
+.open-modal{
+    position: relative;
+    display: block;
+    width: 100px;
+    margin: 1em auto;
+    z-index: 800;
+    background: crimson;
+    color: #ffffff;
+    padding: 5px;
+    font-size: 22px;
+    border: none;
+    border-radius: 20px;
+}
+.open-modal:hover{
+    box-shadow: 5px 3px 3px black;
+    background: brown;
+}
+
+.button-box{
+    position: relative;
+    top: 12em;
+}
+
+.btn-next{
+    position: absolute;
+    right: 3em;
+    bottom: 8em;
+    padding: 5px;
+    border-radius: 20px;
+    background: black;
+    color: #fff;
+    border: none;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.btn-prev{
+    position: absolute;
+    left: 3em;
+    bottom: 8em;
+    padding: 5px;
+    border-radius: 20px;
+    background: black;
+    color: #fff;
+    border: none;
+    font-weight: 900;
+    cursor: pointer;
+}
