@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    font-size: 200%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.email-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 6rem;
+    box-shadow: 6px 12px 30px rgba(0,0,0,0.5);
+    padding: 1rem;
+    width: 600px;
+    border-radius: 10px;
+    background-color: rgb(246, 248, 250);
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+input{
+    padding: 6px;
+    width: 360px;
+    border-radius: 16px;
+    border: none;
+    background-color: darkgrey;
+    font-size: 25px;
+    margin-bottom: 1rem;
+}
+label{
+    margin-bottom: 1rem;
+}
+#submit-btn{
+    background-color: darkturquoise;
+    color:white;
+    margin-top: 1rem;
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.7);
+    justify-content: center;
+    align-items: center;
+}
+.modal-box{
+    position: relative;
+    width: 600px;
+    height: 400px;
+    background-color: #fff;
+    padding: 2rem;
+    font-size: 1.6rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+}
+
+.close-btn{
+    display: flex;
+    background-color: royalblue;
+    color: white;
+    padding: .5rem;
+    border: none;
+    border-radius: 16px;
+    width: 80%;
+    justify-content: center;
+    position: absolute;
+    bottom: 1rem;
+    font-size: 1.2rem;
+}
